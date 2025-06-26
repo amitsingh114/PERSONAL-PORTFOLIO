@@ -1,3 +1,6 @@
+import profilePic from './assets/amit_portfolio.png';
+
+
 import React, { useState, useEffect } from 'react';
 import { Mail, Github, Linkedin, ExternalLink, Code, Shield, Lightbulb, MessageSquare, Briefcase, Award, GraduationCap, BookOpen, ChevronRight, Menu, X } from 'lucide-react';
 
@@ -84,10 +87,12 @@ const AboutPage = ({ setCurrentPage }) => (
     <div className="md:w-1/2 flex justify-center mb-18 md:mb-10 md:mr-20 z-10">
       {/* Replace with your actual photo */}
       <img
-        src="https://placehold.co/250x250/A78BFA/ffffff?text=Your+Photo"
-        alt="Your Profile"
-        className="w-80 h-80 rounded-full object-cover border-4 border-indigo-300 shadow-xl ring-4 ring-indigo-200 transition-transform duration-500 hover:scale-105"
-      />
+  src={profilePic}
+  alt="Your Profile"
+  className="w-80 h-80 rounded-full object-cover border-4 border-indigo-300 shadow-xl ring-4 ring-indigo-200 transition-transform duration-500 hover:scale-105"
+/>
+
+
     </div>
     <div className="md:w-1/2 z-10">
       <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
